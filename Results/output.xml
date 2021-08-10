@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190730 12:28:55.370" rpa="false">
+<suite id="s1" name="DI Test Cases" source="C:\CID Automation\diablo-immortal\tests\DI_Test_Cases.robot">
+<test id="s1-t1" name="Click War 3 Features Link">
+<kw name="Begin Web Test Desktop" library="Config" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190730 12:28:55.679" level="INFO">Opening browser 'chrome' to base url 'https://conjure.webn.mobi/brooms'.</msg>
+<status status="PASS" starttime="20190730 12:28:55.678" endtime="20190730 12:28:58.914"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190730 12:28:58.914" endtime="20190730 12:29:00.516"></status>
+</kw>
+<status status="PASS" starttime="20190730 12:28:55.678" endtime="20190730 12:29:00.516"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://conjure.webn.mobi/brooms</arg>
+</arguments>
+<msg timestamp="20190730 12:29:01.082" level="INFO">Current location is 'https://conjure.webn.mobi/brooms'.</msg>
+<status status="PASS" starttime="20190730 12:29:00.517" endtime="20190730 12:29:01.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190730 12:29:03.084" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190730 12:29:01.083" endtime="20190730 12:29:03.084"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${FEATURES_LINK}</arg>
+</arguments>
+<msg timestamp="20190730 12:29:03.085" level="INFO">Clicking link 'id=2878e1e8-fb01-48e7-b854-4076c3045e8f'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190730 12:29:03.798" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190730 12:29:03.101" endtime="20190730 12:29:03.798"></status>
+</kw>
+<msg timestamp="20190730 12:29:03.800" level="FAIL">Link with locator 'id=2878e1e8-fb01-48e7-b854-4076c3045e8f' not found.</msg>
+<status status="FAIL" starttime="20190730 12:29:03.084" endtime="20190730 12:29:03.800"></status>
+</kw>
+<kw name="End Web Test" library="Config" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190730 12:29:03.801" endtime="20190730 12:29:05.919"></status>
+</kw>
+<status status="PASS" starttime="20190730 12:29:03.801" endtime="20190730 12:29:05.919"></status>
+</kw>
+<status status="FAIL" starttime="20190730 12:28:55.678" endtime="20190730 12:29:05.919" critical="yes">Link with locator 'id=2878e1e8-fb01-48e7-b854-4076c3045e8f' not found.</status>
+</test>
+<doc>Desktop Functional Tests - https://www.diabloimmortal.com</doc>
+<status status="FAIL" starttime="20190730 12:28:55.371" endtime="20190730 12:29:05.921"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="DI Test Cases">DI Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
