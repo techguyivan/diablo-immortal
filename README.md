@@ -13,9 +13,3 @@ Tools needed to run this project locally:
 -  PIP (should come with installation of Python 3.0)
 
 -  Robot Framework
-
-Environments:
-
-QA - http://anubis-web-master-apps-gs6-dev.kube.webn.mobi/
-
-Live - https://diabloimmortal.com/en-us/
